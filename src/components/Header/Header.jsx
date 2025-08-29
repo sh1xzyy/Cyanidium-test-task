@@ -1,0 +1,51 @@
+'use client'
+
+import Link from 'next/link'
+import { logo } from './commonStyles/commonStyles'
+import Container from '../common/Container/Container'
+import { useState } from 'react'
+import BurgerMenu from '../BurgerMenu/BurgerMenu'
+import useWindowWidth from '@/hooks/windowWidth/useWindowWidth'
+import NavList from './parts/NavList/NavList'
+import LanguageSwitcher from './parts/LanguageSwitcher/LanguageSwitcher'
+import BurgerMenuButton from './parts/BurgerMenuButton/BurgerMenuButton'
+import BuyWithDiscount from './parts/BuyWithDiscount/BuyWithDiscount'
+
+const Header = () => {
+	const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false)
+	const { windowWidth } = useWindowWidth()
+
+	return (
+		<>
+			{isBurgerMenuOpen && (
+				<BurgerMenu setIsBurgerMenuOpen={setIsBurgerMenuOpen} />
+			)}
+			<Container>
+				<header className='flex justify-between items-center gap-[27.8px] pt-[51px] pb-[12px] md:pt-[40px]'>
+					<Link href='/' className={logo}>
+						<span>Aleko </span>
+						<span className='bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] to-[#e56f8c] bg-clip-text text-transparent'>
+							Sokurashvili
+						</span>
+					</Link>
+
+					<div className='flex gap-[60px]'>
+						{windowWidth >= 1280 && <NavList listStyles='gap-[28px]' />}
+
+						<div className='flex items-center gap-[27px] xl:gap-[60px]'>
+							<LanguageSwitcher />
+
+							{windowWidth < 1280 ? (
+								<BurgerMenuButton setIsBurgerMenuOpen={setIsBurgerMenuOpen} />
+							) : (
+								<BuyWithDiscount />
+							)}
+						</div>
+					</div>
+				</header>
+			</Container>
+		</>
+	)
+}
+
+export default Header

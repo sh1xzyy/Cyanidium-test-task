@@ -1,0 +1,13 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-burger-menu" viewBox="0 0 32 32">
+<path stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M4 8h24M4 16h24M4 24h24"></path>
+</symbol>
+<symbol id="icon-arrow-down" viewBox="0 0 32 32">
+<path stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.5882" d="M25.473 12.352l-7.798 7.798c-1.675 1.675-1.675 1.675-3.349 0l-7.798-7.798"></path>
+</symbol>
+<symbol id="icon-close-btn" viewBox="0 0 32 32">
+<path stroke="currentColor" d="M15.521 17.331l-6.333 6.338c-0.237 0.237-0.539 0.356-0.905 0.356s-0.668-0.118-0.905-0.355c-0.237-0.237-0.356-0.539-0.356-0.905s0.118-0.668 0.355-0.905l6.333-6.338-6.338-6.333c-0.237-0.237-0.356-0.539-0.356-0.905s0.118-0.668 0.355-0.905c0.237-0.237 0.539-0.356 0.905-0.356s0.668 0.118 0.905 0.355l6.338 6.333 6.333-6.338c0.237-0.237 0.539-0.356 0.905-0.356s0.668 0.118 0.905 0.355c0.237 0.237 0.356 0.539 0.356 0.905s-0.118 0.668-0.355 0.905l-6.333 6.338 6.338 6.333c0.237 0.237 0.356 0.539 0.356 0.905s-0.118 0.668-0.355 0.905c-0.237 0.237-0.539 0.356-0.905 0.356s-0.668-0.118-0.905-0.355l-6.338-6.333z"></path>
+</symbol>
+</defs>
+</svg>
