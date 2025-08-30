@@ -11,7 +11,7 @@ const FeatureItem = ({ data: { feature, level } }) => {
 			></span>
 			<span
 				className={clsx(
-					'font-semibold text-[16px] uppercase',
+					'font-semibold text-[16px] uppercase max-w-[230px]',
 					level === 'advanced' ? 'text-[#0c0117]' : 'text-[#ffffff]'
 				)}
 			>

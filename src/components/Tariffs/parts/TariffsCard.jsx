@@ -1,9 +1,9 @@
 import clsx from 'clsx'
 import ActionButton from './ActionButton'
 import PriceContent from './PriceContent'
-import CardsHeader from './CardsHeader'
 import FeaturesList from './FeaturesList/FeaturesList'
 import BestsellerBadge from './BestsellerBadge'
+import CardsHeader from './CardsHeader/CardsHeader'
 
 const TariffsCard = ({
 	data: {
@@ -16,9 +16,9 @@ const TariffsCard = ({
 	return (
 		<div
 			className={clsx(
-				'relative flex flex-col justify-between py-[32px] px-[32px] w-full rounded-[28px] min-h-[430px] shadow-custom md:px-[36px] md:pt-[36px] md:pb-[26px] xl:max-w-[360px]',
+				'relative flex flex-col justify-between py-[31px] px-[24px] w-full rounded-[28px] min-h-[430px] shadow-custom md:px-[36px] md:pt-[36px] md:pb-[26px] xl:max-w-[360px]',
 				level === 'advanced' && 'bg-[#ffffff]',
-				level === 'expert' && 'base-card-gradient'
+				level === 'expert' && 'gradient-bg-121'
 			)}
 		>
 			<BestsellerBadge isBestSeller={isBestSeller} />

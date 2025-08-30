@@ -1,5 +1,6 @@
 import Container from '@/components/common/Container/Container'
 import Hero from '@/components/Hero/Hero'
+import PromoBanner from '@/components/PromoBanner/PromoBanner'
 import Tariffs from '@/components/Tariffs/Tariffs'
 
 const Home = () => {
@@ -15,6 +16,10 @@ const Home = () => {
 				<Container>
 					<Tariffs />
 				</Container>
+			</section>
+
+			<section className='pt-[38px] pb-[48px] md:pt-[100px] md:pb-[59px]'>
+				<PromoBanner />
 			</section>
 		</>
 	)

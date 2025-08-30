@@ -1,0 +1,43 @@
+'use client'
+
+import TextContent from './parts/TextContent'
+import BuyWithDiscountButton from '../common/BuyWithDiscountButton/BuyWithDiscountButton'
+import GlowSphere from '../common/GlowSphere/GlowSphere'
+import useWindowWidth from '@/hooks/windowWidth/useWindowWidth'
+import RightBlur from './parts/RightBlur'
+import Image from './parts/Image'
+
+const PromoBanner = () => {
+	const { windowWidth } = useWindowWidth()
+	return (
+		<div className='relative flex flex-col items-center gap-[62px] gradient-border-84 py-[113px] md:pt-[60px] md:pb-[108px] md:gap-[44px] overflow-hidden'>
+			{windowWidth >= 1280 ? (
+				<Image />
+			) : (
+				<>
+					<GlowSphere
+						styles='
+        blur-[100px] 
+        top-0 left-0 bg-[#a75df3]'
+					/>
+					<GlowSphere
+						styles='
+        blur-[100px] 
+        right-0 bottom-[0px] bg-[#13b8ff]'
+					/>
+				</>
+			)}
+
+			<TextContent />
+			<BuyWithDiscountButton
+				buttonStyles='h-[68px] rounded-[40px] gradient-bg-121  shadow-buttonCustom'
+				discountStyles='w-[63px] h-[68px]'
+				discount='-50%'
+			/>
+
+			{windowWidth >= 1280 && <RightBlur />}
+		</div>
+	)
+}
+
+export default PromoBanner

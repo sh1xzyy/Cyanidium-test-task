@@ -63,31 +63,76 @@
 }
 
 .gradient-text-151 {
-	background: linear-gradient(151deg, #90e8ff, #9c9eff, #e3a1ff, #e56f8c);
+	background: linear-gradient(
+		151deg,
+		#90e8ff 0%,
+		#9c9eff 40.3%,
+		#e3a1ff 79.87%,
+		#e56f8c 100%
+	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .gradient-text-121 {
-	background: linear-gradient(121deg, #5bdbfd, #7375ff, #df93ff, #e56f8c);
+	background: linear-gradient(
+		121deg,
+		#5bdbfd 0%,
+		#7375ff 40.3%,
+		#df93ff 79.87%,
+		#e56f8c 100%
+	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
+.gradient-bg-121 {
+	background: linear-gradient(
+		121deg,
+		#5bdbfd 0%,
+		#7375ff 40.3%,
+		#df93ff 79.87%,
+		#e56f8c 100%
+	);
+}
+
 .gradient-text-84 {
-	background: linear-gradient(84deg, #5bdbfd, #7375ff, #df93ff, #e56f8c);
+	background: linear-gradient(
+		84deg,
+		#5bdbfd 0%,
+		#7375ff 40.3%,
+		#df93ff 79.87%,
+		#e56f8c 100%
+	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .gradient-bg-84 {
-	background: linear-gradient(84deg, #5bdbfd, #7375ff, #df93ff, #e56f8c);
+	background: linear-gradient(
+		84deg,
+		#5bdbfd 0%,
+		#7375ff 40.3%,
+		#df93ff 79.87%,
+		#e56f8c 100%
+	);
 }
 
-.gradient-bg-121 {
-	background: linear-gradient(121deg, #5bdbfd, #7375ff, #df93ff, #e56f8c);
+.gradient-border-84 {
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	border-image: linear-gradient(
+			84deg,
+			#5bdbfd 0%,
+			#7375ff 40.3%,
+			#df93ff 79.87%,
+			#e56f8c 100%
+		)
+		1;
 }
 
-.base-card-gradient {
-	background-image: linear-gradient(121deg, #5bdbfd, #7375ff, #df93ff, #e56f8c);
+.gradient-right-blur {
+	background: linear-gradient(84deg, #5bdbfd 0%, #7375ff 40.3%, #df93ff 100%);
+	filter: blur(100px);
+	opacity: 0.9;
 }

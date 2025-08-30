@@ -7,11 +7,11 @@ const BurgerMenu = ({ setIsBurgerMenuOpen }) => {
 	return (
 		<div className='flex justify-center flex-col items-center absolute bg-[#0c0117] w-full h-full top-0 left-0 z-[10000]'>
 			<GlowSphere
-				styles='-left-[110px]
+				styles='blur-[120px] -left-[110px]
         top-[30vh] bg-[#13b8ff]'
 			/>
 			<GlowSphere
-				styles='right-0 translate-x-1/2
+				styles='blur-[120px] right-0 translate-x-1/2
         bottom-[8vh] bg-[#a75df3]'
 			/>
 
