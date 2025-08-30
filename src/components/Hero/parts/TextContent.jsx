@@ -3,10 +3,10 @@ import clsx from 'clsx'
 const TextContent = () => {
 	return (
 		<>
-			<div className='flex flex-col gap-[4px] -mt-[92px] mb-[32px] xl:gap-[15px] xl:absolute xl:right-[12px] xl:-bottom-[132px] xl:mb-0 2xl:-left-[113px]'>
+			<div className='-mt-[92px] mb-[32px] xl:absolute xl:right-[12px] xl:-bottom-[132px] xl:mb-0 2xl:-left-[113px]'>
 				<h2
 					className={clsx(
-						'font-bold text-[20px] mb-[4px] xl:text-[32px]',
+						'font-bold text-[20px] mb-[4px] xl:text-[32px] xl:mb-[15px]',
 						'gradient-text'
 					)}
 				>

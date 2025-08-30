@@ -1,3 +1,5 @@
+import LineThrough from '@/components/common/LineThrough/LineThrough'
+
 const PriceContent = () => {
 	return (
 		<div className='flex items-center gap-[9px] mt-[11px] xl:gap-[16px]'>
@@ -6,7 +8,7 @@ const PriceContent = () => {
 			</span>
 			<span className='relative font-semibold text-[14px] tracking-[1.54] text-[#c5c5c5]'>
 				2000 грн
-				<span className='absolute bg-[#c5c5c5] h-[1px] w-[110%] top-1/2 -translate-y-1/2 -left-[3px]'></span>
+				<LineThrough styles='w-[110%] bg-[#c5c5c5]' />
 			</span>
 		</div>
 	)
