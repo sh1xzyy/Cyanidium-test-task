@@ -21,12 +21,10 @@ const Header = () => {
 				<BurgerMenu setIsBurgerMenuOpen={setIsBurgerMenuOpen} />
 			)}
 			<Container>
-				<header className='flex justify-between items-center gap-[27.8px] pt-[51px] pb-[12px] md:pt-[40px]'>
+				<header className='flex justify-between items-center gap-[27.8px] pt-[51px] pb-[12px] md:pt-[40px] md:pb-[33px]'>
 					<Link href='/' className={logo}>
 						<span>Aleko </span>
-						<span className='bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] to-[#e56f8c] bg-clip-text text-transparent'>
-							Sokurashvili
-						</span>
+						<span className='gradient-text'>Sokurashvili</span>
 					</Link>
 
 					<div className='flex gap-[60px]'>

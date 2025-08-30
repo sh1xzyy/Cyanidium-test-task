@@ -2,6 +2,7 @@ import { Manrope, Raleway } from 'next/font/google'
 import '../styles/globals.css'
 import localFont from 'next/font/local'
 import { Toaster } from 'react-hot-toast'
+import Header from '@/components/Header/Header'
 
 export const manrope = Manrope({
 	subsets: ['latin', 'cyrillic'],
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
 				className={`${manrope.variable} ${raleway.variable} ${sansation.variable} antialiased`}
 			>
 				<Toaster position='top-left' />
+				<Header />
 				<main>{children}</main>
 			</body>
 		</html>
