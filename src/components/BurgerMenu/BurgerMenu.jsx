@@ -15,7 +15,7 @@ const BurgerMenu = ({ setIsBurgerMenuOpen }) => {
         bottom-[8vh] bg-[#a75df3]'
 			/>
 
-			<CloseModalButton setIsModalOpen={setIsBurgerMenuOpen} />
+			<CloseModalButton styles="top-[32px] right-[22px]" setIsModalOpen={setIsBurgerMenuOpen} />
 
 			<NavList
 				listStyles='flex-col gap-[20px]'
