@@ -9,7 +9,6 @@ const GlowSphere = ({ styles }) => {
         w-[184px] 
         h-[173px] 
         rounded-full 
-        blur-[120px] 
         opacity-60 
         pointer-events-none
         overflow-x-hidden

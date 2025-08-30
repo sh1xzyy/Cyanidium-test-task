@@ -13,7 +13,7 @@ const config = {
 			},
 			boxShadow: {
 				custom: '0 4px 16px 1px rgba(0, 0, 0, 0.25)',
-				cardCustom: 'inset 4px 6px 10px 4px rgba(255, 255, 255, 0.1)',
+				buttonCustom: 'inset 4px 6px 10px 4px rgba(167, 93, 243, 0.2)',
 			},
 		},
 	},

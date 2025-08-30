@@ -1,4 +1,4 @@
-import TariffsList from './parts/TariffsList'
+import TariffsList from './parts/TariffsList/TariffsList'
 
 const Tariffs = () => {
 	return (
