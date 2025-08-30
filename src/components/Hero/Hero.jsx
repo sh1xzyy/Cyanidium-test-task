@@ -1,7 +1,7 @@
 import BuyWithDiscountButton from '../common/BuyWithDiscountButton/BuyWithDiscountButton'
 import Image from './parts/Image'
 import TextContent from './parts/TextContent'
-import PriceContent from './parts/priceContent'
+import PriceContent from './parts/PriceContent'
 
 const Hero = () => {
 	return (
