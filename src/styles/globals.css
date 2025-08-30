@@ -59,3 +59,9 @@ img {
 	max-width: 100%;
 	object-fit: contain;
 }
+
+.gradient-text {
+	background: linear-gradient(151deg, #90e8ff, #9c9eff, #e3a1ff, #e56f8c);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
