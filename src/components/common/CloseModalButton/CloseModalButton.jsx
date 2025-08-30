@@ -1,7 +1,9 @@
-const CloseModalButton = ({ setIsModalOpen }) => {
+import clsx from "clsx"
+
+const CloseModalButton = ({styles, setIsModalOpen }) => {
 	return (
 		<button
-			className='absolute top-[32px] right-[22px]'
+			className={clsx('absolute', styles)}
 			type='button'
 			onClick={() => setIsModalOpen(false)}
 		>
