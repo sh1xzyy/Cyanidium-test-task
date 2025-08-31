@@ -1,8 +1,13 @@
 import clsx from 'clsx'
 import { useModalFormContext } from '../../../../context/useModalFormContext/useModalFormContext'
+import { useBurgerMenuOpenContext } from '@/context/useBurgerMenuOpenContext/useBurgerMenuOpenContext'
+import useWindowWidth from '@/hooks/windowWidth/useWindowWidth'
 
 const BuyWithDiscount = ({ styles }) => {
-	const {setIsModalFormOpen} = useModalFormContext()
+	const { setIsModalFormOpen } = useModalFormContext()
+	const { setIsBurgerMenuOpen } = useBurgerMenuOpenContext()
+	const { windowWidth } = useWindowWidth()
+
 	return (
 		<button
 			className={clsx(
@@ -10,7 +15,12 @@ const BuyWithDiscount = ({ styles }) => {
 				styles
 			)}
 			type='button'
-			onClick={() => setIsModalFormOpen(true)}
+			onClick={() => {
+				setIsModalFormOpen(true)
+				{
+					windowWidth < 1280 && setIsBurgerMenuOpen(false)
+				}
+			}}
 		>
 			Купить со скидкой
 		</button>

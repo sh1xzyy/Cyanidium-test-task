@@ -1,6 +1,10 @@
+'use client'
+
+import { useModalFormContext } from '@/context/useModalFormContext/useModalFormContext'
 import clsx from 'clsx'
 
 const ActionButton = ({ level }) => {
+	const { setIsModalFormOpen } = useModalFormContext()
 	return (
 		<button
 			className={clsx(
@@ -12,6 +16,7 @@ const ActionButton = ({ level }) => {
 				level === 'expert' && 'mt-[22px] '
 			)}
 			type='button'
+			onClick={() => setIsModalFormOpen(true)}
 		>
 			Купить
 		</button>

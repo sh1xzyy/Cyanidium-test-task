@@ -11,16 +11,12 @@ const config = {
 				raleway: ['var(--font-raleway)', 'sans-serif'],
 				sansation: ['var(--font-sansation)', 'sans-serif'],
 			},
-			boxShadow: {
-				custom: '0 4px 16px 1px rgba(0, 0, 0, 0.25)',
-				buttonCustom: 'inset 4px 6px 10px 4px rgba(167, 93, 243, 0.2)',
-			},
 			keyframes: {
-        		appearance: {
-          			"0%": { opacity: 0 },
-          			"100%": { opacity: 1 },
-        		},
-      		},
+				appearance: {
+					'0%': { opacity: 0 },
+					'100%': { opacity: 1 },
+				},
+			},
 		},
 	},
 	plugins: [],

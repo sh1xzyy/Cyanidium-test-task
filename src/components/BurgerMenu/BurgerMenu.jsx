@@ -1,28 +1,30 @@
+import clsx from 'clsx'
 import CloseModalButton from '../common/CloseModalButton/CloseModalButton'
 import GlowSphere from '../common/GlowSphere/GlowSphere'
-import BuyWithDiscount from '../Header/parts/BuyWithDiscount/BuyWithDiscount'
-import NavList from '../Header/parts/NavList/NavList'
 
-const BurgerMenu = ({ setIsBurgerMenuOpen }) => {
+const BurgerMenu = ({ setIsBurgerMenuOpen, children, styles }) => {
 	return (
-		<div className='flex justify-center flex-col items-center absolute bg-[#0c0117] w-full h-full top-0 left-0 z-[10000]'>
+		<div
+			className={clsx(
+				'flex justify-center flex-col items-center fixed bg-[#0c0117] w-full h-full top-1/2 left-1/2 -translate-1/2 z-[10000]',
+				styles
+			)}
+		>
 			<GlowSphere
 				styles='blur-[120px] -left-[110px]
         top-[30vh] bg-[#13b8ff]'
 			/>
 			<GlowSphere
 				styles='blur-[120px] right-0 translate-x-1/2
-        bottom-[8vh] bg-[#a75df3]'
+        bottom-[M] bg-[#a75df3]'
 			/>
 
-			<CloseModalButton styles="top-[32px] right-[22px]" setIsModalOpen={setIsBurgerMenuOpen} />
-
-			<NavList
-				listStyles='flex-col gap-[20px]'
-				type='burgerMenu'
-				setIsBurgerMenuOpen={setIsBurgerMenuOpen}
+			<CloseModalButton
+				styles='top-[32px] right-[22px]'
+				setIsModalOpen={setIsBurgerMenuOpen}
 			/>
-			<BuyWithDiscount styles='mt-[25px]' />
+
+			{children}
 		</div>
 	)
 }
