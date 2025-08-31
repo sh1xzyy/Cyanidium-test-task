@@ -13,21 +13,11 @@ const Level = ({ level }) => {
 					)}
 				>
 					{level === 'advanced' ? (
-						<span
-							className={clsx(
-								'font-bold text-[16px] uppercase',
-								'gradient-text-121'
-							)}
-						>
+						<span className='font-bold text-[16px] uppercase gradient-text-121'>
 							pro
 						</span>
 					) : (
-						<span
-							className={clsx(
-								'font-bold text-[16px] uppercase',
-								'gradient-text-121'
-							)}
-						>
+						<span className='font-bold text-[16px] uppercase gradient-text-121'>
 							expert
 						</span>
 					)}

@@ -19,6 +19,8 @@
 	"nickname": "Ник Telegram",
 	"sendButton": "Отправить",
 	"enterYourData": "укажите свои данные",
+	"errorTitle": "Страница, которую вы ищете, не существует.",
+	"errorButton": "Назад додому",
 
 	"courses": {
 		"basic": "Базовый",
