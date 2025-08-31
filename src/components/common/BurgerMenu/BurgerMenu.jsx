@@ -1,8 +1,16 @@
 import clsx from 'clsx'
-import CloseModalButton from '../common/CloseModalButton/CloseModalButton'
-import GlowSphere from '../common/GlowSphere/GlowSphere'
+import GlowSphere from '../GlowSphere/GlowSphere'
+import CloseModalButton from '../CloseModalButton/CloseModalButton'
+import useLockBodyScroll from '@/hooks/useLockBodyScroll/useLockBodyScroll'
 
-const BurgerMenu = ({ setIsBurgerMenuOpen, children, styles }) => {
+const BurgerMenu = ({
+	isBurgerMenuOpen,
+	setIsBurgerMenuOpen,
+	children,
+	styles,
+}) => {
+	useLockBodyScroll(isBurgerMenuOpen)
+
 	return (
 		<div
 			className={clsx(

@@ -3,13 +3,13 @@
 import Link from 'next/link'
 import { logo } from './commonStyles/commonStyles'
 import Container from '../common/Container/Container'
-import BurgerMenu from '../BurgerMenu/BurgerMenu'
 import useWindowWidth from '@/hooks/windowWidth/useWindowWidth'
 import NavList from './parts/NavList/NavList'
 import LanguageSwitcher from './parts/LanguageSwitcher/LanguageSwitcher'
 import BurgerMenuButton from './parts/BurgerMenuButton/BurgerMenuButton'
-import BuyWithDiscount from './parts/BuyWithDiscount/BuyWithDiscount'
+import BuyWithDiscountSmall from './parts/BuyWithDiscountSmall/BuyWithDiscountSmall'
 import { useBurgerMenuOpenContext } from '@/context/useBurgerMenuOpenContext/useBurgerMenuOpenContext'
+import BurgerMenu from '../common/BurgerMenu/BurgerMenu'
 
 const Header = () => {
 	const { isBurgerMenuOpen, setIsBurgerMenuOpen } = useBurgerMenuOpenContext()
@@ -24,31 +24,33 @@ const Header = () => {
 						type='burgerMenu'
 						setIsBurgerMenuOpen={setIsBurgerMenuOpen}
 					/>
-					<BuyWithDiscount styles='mt-[25px]' />
+					<BuyWithDiscountSmall styles='mt-[25px]' />
 				</BurgerMenu>
 			)}
-			<Container>
-				<header className='flex justify-between items-center gap-[27.8px] pt-[51px] pb-[12px] md:pt-[40px] md:pb-[33px]'>
-					<Link href='/' className={logo}>
-						<span>Aleko </span>
-						<span className='gradient-text-84'>Sokurashvili</span>
-					</Link>
+			<header className='xl:fixed xl:top-0 xl:left-0 xl:w-full xl:z-[50] bg-[#0c0117]'>
+				<Container>
+					<div className='flex justify-between items-center gap-[27.8px] pt-[51px] pb-[12px] md:pt-[40px] md:pb-[33px]'>
+						<Link href='/' className={logo}>
+							<span>Aleko </span>
+							<span className='gradient-text-84'>Sokurashvili</span>
+						</Link>
 
-					<div className='flex gap-[60px]'>
-						{windowWidth >= 1280 && <NavList listStyles='gap-[28px]' />}
+						<div className='flex gap-[60px]'>
+							{windowWidth >= 1280 && <NavList listStyles='gap-[28px]' />}
 
-						<div className='flex items-center gap-[27px] xl:gap-[60px]'>
-							<LanguageSwitcher />
+							<div className='flex items-center gap-[27px] xl:gap-[60px]'>
+								<LanguageSwitcher />
 
-							{windowWidth < 1280 ? (
-								<BurgerMenuButton setIsBurgerMenuOpen={setIsBurgerMenuOpen} />
-							) : (
-								<BuyWithDiscount />
-							)}
+								{windowWidth < 1280 ? (
+									<BurgerMenuButton setIsBurgerMenuOpen={setIsBurgerMenuOpen} />
+								) : (
+									<BuyWithDiscountSmall />
+								)}
+							</div>
 						</div>
 					</div>
-				</header>
-			</Container>
+				</Container>
+			</header>
 		</>
 	)
 }

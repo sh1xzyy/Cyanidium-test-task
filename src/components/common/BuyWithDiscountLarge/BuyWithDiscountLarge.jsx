@@ -3,7 +3,7 @@
 import { useModalFormContext } from '@/context/useModalFormContext/useModalFormContext'
 import clsx from 'clsx'
 
-const BuyWithDiscountButton = ({ buttonStyles, discountStyles, discount }) => {
+const BuyWithDiscountLarge = ({ buttonStyles, discountStyles, discount }) => {
 	const { setIsModalFormOpen } = useModalFormContext()
 
 	return (
@@ -15,6 +15,7 @@ const BuyWithDiscountButton = ({ buttonStyles, discountStyles, discount }) => {
 				)}
 				type='button'
 				onClick={() => setIsModalFormOpen(true)}
+				aria-label='купить со скидкой'
 			>
 				Купить со скидкой
 			</button>
@@ -32,4 +33,4 @@ const BuyWithDiscountButton = ({ buttonStyles, discountStyles, discount }) => {
 	)
 }
 
-export default BuyWithDiscountButton
+export default BuyWithDiscountLarge

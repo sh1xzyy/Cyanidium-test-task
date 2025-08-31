@@ -4,12 +4,15 @@ import clsx from 'clsx'
 import { useCloseModalByKeydown } from '../../../hooks/useCloseModalByKeyDown/useCloseModalByKeyDown'
 import { handleOverlayClick } from '../../../utils/modal/handleOverlayClick'
 import CloseModalButton from '../CloseModalButton/CloseModalButton'
+import useLockBodyScroll from '@/hooks/useLockBodyScroll/useLockBodyScroll'
 
-const BaseModal = ({ styles, children, setIsModalOpen }) => {
+const BaseModal = ({ isModalOpen, styles, children, setIsModalOpen }) => {
 	useCloseModalByKeydown(setIsModalOpen)
+	useLockBodyScroll(isModalOpen)
+
 	return (
 		<div
-			className='fixed left-1/2 top-1/2 z-[1000] flex items-center justify-center h-full w-full -translate-1/2 animate-appearance bg-[#0c0117]'
+			className='fixed left-1/2 top-[110px] pt-[79px] z-[1000] flex items-start justify-center h-full w-full -translate-x-1/2 animate-appearance bg-[#0c0117]'
 			onClick={e => handleOverlayClick(e, setIsModalOpen)}
 		>
 			<div

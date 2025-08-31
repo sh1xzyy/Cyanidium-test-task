@@ -64,6 +64,7 @@ const ModalForm = () => {
 					<button
 						className='h-[50px] rounded-[10px] min-w-[317px] bg-[#ffffff] font-bold text-[14px] leading-[1.43] text-[#0c0117] mt-[40px] shadow-[0_1px_2px_0_rgba(0,0,0,0.05)] gradient-border-84 xl:min-w-[310px]'
 						type='submit'
+						aria-label='кнопка отправки сообщения'
 					>
 						Отправить
 					</button>

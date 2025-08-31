@@ -8,8 +8,8 @@ import BaseModal from '../components/common/BaseModal/BaseModal'
 import ModalFormContent from '../components/ModalFormContent/ModalFormContent'
 import { useModalFormContext } from '../context/useModalFormContext/useModalFormContext'
 import useWindowWidth from '../hooks/windowWidth/useWindowWidth'
-import BurgerMenu from '@/components/BurgerMenu/BurgerMenu'
 import GlowSphere from '@/components/common/GlowSphere/GlowSphere'
+import BurgerMenu from '@/components/common/BurgerMenu/BurgerMenu'
 
 const Home = () => {
 	const { isModalFormOpen, setIsModalFormOpen } = useModalFormContext()
@@ -18,13 +18,17 @@ const Home = () => {
 	return (
 		<>
 			{isModalFormOpen && windowWidth >= 1280 && (
-				<BaseModal setIsModalOpen={setIsModalFormOpen}>
+				<BaseModal
+					isModalOpen={isModalFormOpen}
+					setIsModalOpen={setIsModalFormOpen}
+				>
 					<ModalFormContent />
 				</BaseModal>
 			)}
 
 			{isModalFormOpen && windowWidth < 1280 && (
 				<BurgerMenu
+					isBurgerMenuOpen={isModalFormOpen}
 					setIsBurgerMenuOpen={setIsModalFormOpen}
 					styles='pt-[157px] pb-[41px]'
 				>
@@ -48,7 +52,7 @@ const Home = () => {
 				</Container>
 			</section>
 
-			<section className='pt-[66px] pb-[38px] md:py-[100px]'>
+			<section className='pt-[66px] pb-[38px] md:py-[100px]' id='tariffs'>
 				<Container>
 					<Tariffs />
 				</Container>
