@@ -1,0 +1,46 @@
+{
+	"structure": "Structure",
+	"aboutMe": "About Me",
+	"pluses": "Advantages",
+	"reviews": "Reviews",
+	"faq": "FAQ",
+	"slogan": "Become famous in just 3 months without spending on ads! Discover the key to creating viral content and turn your ideas into millions of views.",
+	"fromZeroTo": "From 0 to 100,000 in 90 days",
+	"viralSecrets": "Viral Video Secrets",
+	"buyWithDiscount": "Buy with Discount",
+	"pricing": "Pricing",
+	"buy": "Buy",
+	"learnToCreate1": "Learn how to create",
+	"learnToCreate2": "content that",
+	"learnToCreate3": "captivates the audience",
+	"viralMaterials": "Materials that can go viral and reach thousands of people!",
+	"price": "uah",
+	"name": "Name",
+	"nickname": "Telegram Nickname",
+	"sendButton": "Send",
+	"enterYourData": "enter your details",
+
+	"courses": {
+		"basic": "Basic",
+		"advanced": "Advanced",
+		"expert": "Expert",
+		"features": {
+			"basic_course": "Basic course",
+			"38_lessons": "38 lessons",
+			"foundation": "Foundation",
+			"additional_lessons": "Additional lessons",
+			"48_lessons": "48 lessons",
+			"chat_community_for_content_creators": "Chat community for content creators",
+			"review_of_your_page_via_video_call": "Review of your page via video call"
+		}
+	},
+
+	"aria": {
+		"buyWithDiscount": "Buy with discount",
+		"closeButton": "close button",
+		"burgerOpenButton": "burger menu open button",
+		"languageSwitchButton": "language switch button",
+		"sendMessageButton": "send message button",
+		"buyPlanButton": "buy plan button"
+	}
+}

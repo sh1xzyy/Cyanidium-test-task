@@ -1,15 +1,15 @@
 'use client'
 
+import BaseModal from '@/components/common/BaseModal/BaseModal'
+import BurgerMenu from '@/components/common/BurgerMenu/BurgerMenu'
 import Container from '@/components/common/Container/Container'
+import GlowSphere from '@/components/common/GlowSphere/GlowSphere'
 import Hero from '@/components/Hero/Hero'
+import ModalFormContent from '@/components/ModalFormContent/ModalFormContent'
 import PromoBanner from '@/components/PromoBanner/PromoBanner'
 import Tariffs from '@/components/Tariffs/Tariffs'
-import BaseModal from '../components/common/BaseModal/BaseModal'
-import ModalFormContent from '../components/ModalFormContent/ModalFormContent'
-import { useModalFormContext } from '../context/useModalFormContext/useModalFormContext'
-import useWindowWidth from '../hooks/windowWidth/useWindowWidth'
-import GlowSphere from '@/components/common/GlowSphere/GlowSphere'
-import BurgerMenu from '@/components/common/BurgerMenu/BurgerMenu'
+import { useModalFormContext } from '@/context/useModalFormContext/useModalFormContext'
+import useWindowWidth from '@/hooks/windowWidth/useWindowWidth'
 
 const Home = () => {
 	const { isModalFormOpen, setIsModalFormOpen } = useModalFormContext()

@@ -1,10 +1,12 @@
 'use client'
 
 import { useModalFormContext } from '@/context/useModalFormContext/useModalFormContext'
+import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
 import clsx from 'clsx'
 
 const BuyWithDiscountLarge = ({ buttonStyles, discountStyles, discount }) => {
 	const { setIsModalFormOpen } = useModalFormContext()
+	const { t } = useClientTranslation()
 
 	return (
 		<div className='relative'>
@@ -15,9 +17,9 @@ const BuyWithDiscountLarge = ({ buttonStyles, discountStyles, discount }) => {
 				)}
 				type='button'
 				onClick={() => setIsModalFormOpen(true)}
-				aria-label='купить со скидкой'
+				aria-label={t('buyWithDiscount')}
 			>
-				Купить со скидкой
+				{t('buyWithDiscount')}
 			</button>
 			<div
 				className={clsx(

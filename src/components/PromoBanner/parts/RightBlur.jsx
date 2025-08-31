@@ -1,9 +1,12 @@
+import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
+
 const RightBlur = () => {
+	const { t } = useClientTranslation()
 	return (
 		<>
 			<div className='absolute bottom-[95px] -right-[650px] flex justify-center items-center -rotate-[45deg] w-full gradient-bg-121 h-[97px] blur-[3px]'>
 				<span className='font-sansation font-bold text-[34px] uppercase'>
-					Секреты вирусных видео
+					{t('viralSecrets')}
 				</span>
 			</div>
 

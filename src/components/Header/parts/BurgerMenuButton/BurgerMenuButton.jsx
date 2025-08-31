@@ -1,10 +1,14 @@
+import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
+
 const BurgerMenuButton = ({ setIsBurgerMenuOpen }) => {
+	const { t } = useClientTranslation()
+
 	return (
 		<button
 			className='group'
 			type='button'
 			onClick={() => setIsBurgerMenuOpen(true)}
-			aria-label='кнопка открытия бургер меню'
+			aria-label={t('burgerOpenButton')}
 		>
 			<svg
 				className='group-hover:text-[#5bdbfd] transition linear duration-[250ms]'

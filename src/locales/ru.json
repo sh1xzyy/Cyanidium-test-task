@@ -1,0 +1,46 @@
+{
+	"structure": "Структура",
+	"aboutMe": "Обо мне",
+	"pluses": "Плюсы",
+	"reviews": "Отзывы",
+	"faq": "FAQ",
+	"slogan": "Станьте известным всего за 3 месяца без затрат на рекламу! Узнайте ключ к созданию вирусного контента и превратите свои идеи в миллионные просмотры.",
+	"fromZeroTo": "От 0 до 100,000 за 90 дней",
+	"viralSecrets": "Секреты Вирусных Видео",
+	"buyWithDiscount": "Купить со скидкой",
+	"pricing": "Тарифы",
+	"buy": "Купить",
+	"learnToCreate1": "Узнай, как создавать",
+	"learnToCreate2": "контент, который",
+	"learnToCreate3": "покоряет аудитории",
+	"viralMaterials": "Материалы, способные стать вирусными и охватить тысячи людей!",
+	"price": "грн",
+	"name": "Имя",
+	"nickname": "Ник Telegram",
+	"sendButton": "Отправить",
+	"enterYourData": "укажите свои данные",
+
+	"courses": {
+		"basic": "Базовый",
+		"advanced": "Продвинутый",
+		"expert": "Эксперт",
+		"features": {
+			"basic_course": "Базовый курс",
+			"38_lessons": "38 уроков",
+			"foundation": "База",
+			"additional_lessons": "Дополнительные уроки",
+			"48_lessons": "48 уроков",
+			"chat_community_for_content_creators": "Чат-комьюнити для создателей контента",
+			"review_of_your_page_via_video_call": "Разбор вашей страницы в формате видеозвонка"
+		}
+	},
+
+	"aria": {
+		"buyWithDiscount": "Купить со скидкой",
+		"closeButton": "кнопка закрытия",
+		"burgerOpenButton": "кнопка открытия бургер меню",
+		"languageSwitchButton": "кнопка переключения языка страницы",
+		"sendMessageButton": "кнопка отправки сообщения",
+		"buyPlanButton": "кнопка покупки тарифа"
+	}
+}

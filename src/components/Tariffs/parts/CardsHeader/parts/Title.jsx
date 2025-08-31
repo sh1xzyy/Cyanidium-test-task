@@ -1,6 +1,8 @@
+import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
 import clsx from 'clsx'
 
 const Title = ({ level }) => {
+	const { t } = useClientTranslation()
 	return (
 		<h3
 			className={clsx(
@@ -8,9 +10,9 @@ const Title = ({ level }) => {
 				level === 'advanced' ? 'text-[#0c0117]' : 'text-[#ffffff]'
 			)}
 		>
-			{level === 'base' && 'Базовый'}
-			{level === 'advanced' && 'Продвинутий'}
-			{level === 'expert' && 'ЭКСПЕРТ'}
+			{level === 'base' && t('basic')}
+			{level === 'advanced' && t('advanced')}
+			{level === 'expert' && t('expert')}
 		</h3>
 	)
 }

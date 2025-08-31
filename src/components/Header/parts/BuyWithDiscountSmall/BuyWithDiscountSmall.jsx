@@ -1,7 +1,9 @@
+import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
 import clsx from 'clsx'
 import Link from 'next/link'
 
 const BuyWithDiscountSmall = ({ styles }) => {
+	const { t } = useClientTranslation()
 	return (
 		<Link
 			className={clsx(
@@ -9,10 +11,10 @@ const BuyWithDiscountSmall = ({ styles }) => {
 				styles
 			)}
 			scroll={true}
-			aria-label='купить со скидкой'
+			aria-label={t('buyWithDiscount')}
 			href='#tariffs'
 		>
-			Купить со скидкой
+			{t('buyWithDiscount')}
 		</Link>
 	)
 }

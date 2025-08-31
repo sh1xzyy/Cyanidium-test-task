@@ -1,12 +1,15 @@
 import Link from 'next/link'
-import { navigation } from './navigation'
 import clsx from 'clsx'
+import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
+import { navigation } from './navigation'
 
 const NavList = ({ listStyles, type, setIsBurgerMenuOpen }) => {
+	const { t } = useClientTranslation()
+	const navItems = navigation(t)
 	return (
 		<nav className='flex justify-center items-center'>
 			<ul className={clsx('flex items-center', listStyles)}>
-				{navigation.map(({ value, href }, index) => (
+				{navItems.map(({ value, href }, index) => (
 					<li
 						key={index}
 						className='font-medium text-[16px] hover:text-[#5bdbfd] transition linear duration-[250ms]'

@@ -1,18 +1,49 @@
 'use client'
 
-import { useState } from 'react'
-
-const languages = ['RU', 'EN']
+import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
+import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const LanguageSwitcher = () => {
+	const { i18n } = useTranslation()
 	const [isOpen, setIsOpen] = useState(false)
-	const [lang, setLang] = useState('RU')
+	const [mounted, setMounted] = useState(false)
+	const { t } = useClientTranslation()
+
+	useEffect(() => {
+		setMounted(true)
+	}, [])
 
 	const toggleDropdown = () => setIsOpen(!isOpen)
-	const selectLang = selected => {
-		setLang(selected)
+
+	const handleLanguageChange = newLocale => {
+		i18n.changeLanguage(newLocale)
 		setIsOpen(false)
 	}
+
+	const languages = [
+		{ code: 'ru', name: 'RU' },
+		{ code: 'en', name: 'EN' },
+	]
+
+	if (!mounted) {
+		return (
+			<div className='relative inline-block'>
+				<button
+					className='flex gap-[9px] items-center font-bold text-[14px] leading-[1.43] md:text-[16px]'
+					aria-label={t('languageSwitchButton')}
+				>
+					RU
+					<svg width={16} height={16}>
+						<use href='/sprite/sprite.svg#icon-arrow-down'></use>
+					</svg>
+				</button>
+			</div>
+		)
+	}
+
+	const currentLang =
+		languages.find(lang => lang.code === i18n.language)?.name || 'RU'
 
 	return (
 		<div className='relative inline-block'>
@@ -20,9 +51,9 @@ const LanguageSwitcher = () => {
 				className='flex gap-[9px] items-center font-bold text-[14px] leading-[1.43] md:text-[16px] hover:text-[#5bdbfd] transition-colors duration-[250ms]'
 				type='button'
 				onClick={toggleDropdown}
-				aria-label='кнопка переключения языка страницы'
+				aria-label={t('languageSwitchButton')}
 			>
-				{lang}
+				{currentLang}
 				<svg width={16} height={16}>
 					<use href='/sprite/sprite.svg#icon-arrow-down'></use>
 				</svg>
@@ -30,13 +61,13 @@ const LanguageSwitcher = () => {
 
 			{isOpen && (
 				<ul className='absolute top-[25px] left-0 mt-[10px] w-[80px] bg-[#1d0931] rounded z-[10]'>
-					{languages.map((language, index) => (
+					{languages.map(language => (
 						<li
-							key={index}
+							key={language.code}
 							className='px-3 py-2 hover:bg-[#155668] cursor-pointer transition linear duration-[250ms]'
-							onClick={() => selectLang(language)}
+							onClick={() => handleLanguageChange(language.code)}
 						>
-							{language}
+							{language.name}
 						</li>
 					))}
 				</ul>
