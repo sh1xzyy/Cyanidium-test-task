@@ -17,11 +17,17 @@ const NavList = ({ listStyles, type, setIsBurgerMenuOpen }) => {
 						className='font-medium text-[16px] hover:text-[#5bdbfd] transition linear duration-[250ms]'
 					>
 						{type === 'burgerMenu' ? (
-							<Link href={href} onClick={() => setIsBurgerMenuOpen(false)}>
+							<Link
+								className='focus:text-[#5bdbfd]'
+								href={href}
+								onClick={() => setIsBurgerMenuOpen(false)}
+							>
 								{value}
 							</Link>
 						) : (
-							<Link href={href}>{value}</Link>
+							<Link className='focus:text-[#5bdbfd]' href={href}>
+								{value}
+							</Link>
 						)}
 					</li>
 				))}
