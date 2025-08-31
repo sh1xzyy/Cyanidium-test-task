@@ -1,3 +1,5 @@
+'use client'
+
 import { useSelector } from 'react-redux'
 import TariffsList from './parts/TariffsList'
 import useGetCards from '@/features/cards/useGetCards'

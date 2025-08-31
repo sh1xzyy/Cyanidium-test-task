@@ -1,3 +1,5 @@
+'use client'
+
 import LineThrough from '@/components/common/LineThrough/LineThrough'
 import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
 

@@ -1,3 +1,5 @@
+'use client'
+
 import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
 
 const Title = () => {

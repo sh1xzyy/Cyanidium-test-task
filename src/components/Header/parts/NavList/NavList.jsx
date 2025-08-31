@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import clsx from 'clsx'
 import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'

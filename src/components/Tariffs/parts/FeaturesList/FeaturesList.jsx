@@ -1,3 +1,5 @@
+'use client'
+
 import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
 import FeatureItem from './parts/FeatureItem'
 
