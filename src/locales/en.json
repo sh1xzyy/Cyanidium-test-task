@@ -19,6 +19,8 @@
 	"nickname": "Telegram Nickname",
 	"sendButton": "Send",
 	"enterYourData": "enter your details",
+	"errorTitle": "The page you are looking for does not exist.",
+	"errorButton": "Back home",
 
 	"courses": {
 		"basic": "Basic",

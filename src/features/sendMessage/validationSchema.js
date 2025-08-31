@@ -1,4 +1,4 @@
-import { emailRegex } from '@/constants/constants'
+import { emailRegex } from '@/lib/constants'
 import * as Yup from 'yup'
 
 export const validationSchema = Yup.object({
