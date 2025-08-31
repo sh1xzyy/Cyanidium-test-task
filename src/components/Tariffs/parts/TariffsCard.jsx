@@ -4,6 +4,7 @@ import PriceContent from './PriceContent'
 import FeaturesList from './FeaturesList/FeaturesList'
 import BestsellerBadge from './BestsellerBadge'
 import CardsHeader from './CardsHeader/CardsHeader'
+import GlowSphere from '@/components/common/GlowSphere/GlowSphere'
 
 const TariffsCard = ({
 	data: {
@@ -22,6 +23,10 @@ const TariffsCard = ({
 			)}
 		>
 			<BestsellerBadge isBestSeller={isBestSeller} />
+
+			{level === 'base' && (
+				<GlowSphere styles='w-[184px] h-[173px] bottom-0 left-0 blur-[170px] bg-[#13b8ff]' />
+			)}
 
 			<div>
 				<CardsHeader level={level} />

@@ -17,6 +17,9 @@ const config = {
 					'100%': { opacity: 1 },
 				},
 			},
+			animation: {
+				appearance: 'appearance 250ms linear',
+			},
 		},
 	},
 	plugins: [],

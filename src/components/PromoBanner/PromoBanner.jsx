@@ -15,16 +15,8 @@ const PromoBanner = () => {
 				<Image />
 			) : (
 				<>
-					<GlowSphere
-						styles='
-        blur-[100px] 
-        top-0 left-0 bg-[#a75df3]'
-					/>
-					<GlowSphere
-						styles='
-        blur-[100px] 
-        right-0 bottom-[0px] bg-[#13b8ff]'
-					/>
+					<GlowSphere styles='w-[184px] h-[173px] blur-[100px] top-0 left-0 bg-[#a75df3]' />
+					<GlowSphere styles='w-[184px] h-[173px] blur-[100px] right-0 bottom-0 bg-[#13b8ff]' />
 				</>
 			)}
 
