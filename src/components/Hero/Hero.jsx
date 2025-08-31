@@ -1,7 +1,7 @@
-import BuyWithDiscountButton from '../common/BuyWithDiscountButton/BuyWithDiscountButton'
 import Image from './parts/Image'
 import TextContent from './parts/TextContent'
 import PriceContent from './parts/PriceContent'
+import BuyWithDiscountLarge from '../common/BuyWithDiscountLarge/BuyWithDiscountLarge'
 
 const Hero = () => {
 	return (
@@ -15,7 +15,7 @@ const Hero = () => {
 
 				<div className='inline-flex flex-col items-center w-fit'>
 					<div className='xl:self-start'>
-						<BuyWithDiscountButton
+						<BuyWithDiscountLarge
 							buttonStyles='h-[60px] rounded-[30px] bg-[#ffffff] text-[#000000]'
 							discountStyles='w-[60px] h-[60px]'
 							discount='-50%'

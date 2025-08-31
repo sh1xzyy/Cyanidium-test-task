@@ -4,6 +4,7 @@ const BurgerMenuButton = ({ setIsBurgerMenuOpen }) => {
 			className='group'
 			type='button'
 			onClick={() => setIsBurgerMenuOpen(true)}
+			aria-label='кнопка открытия бургер меню'
 		>
 			<svg
 				className='group-hover:text-[#5bdbfd] transition linear duration-[250ms]'

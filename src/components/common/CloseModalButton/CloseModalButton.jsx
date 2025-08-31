@@ -1,11 +1,12 @@
-import clsx from "clsx"
+import clsx from 'clsx'
 
-const CloseModalButton = ({styles, setIsModalOpen }) => {
+const CloseModalButton = ({ styles, setIsModalOpen }) => {
 	return (
 		<button
 			className={clsx('absolute', styles)}
 			type='button'
 			onClick={() => setIsModalOpen(false)}
+			aria-label='кнопка закрытия'
 		>
 			<svg
 				className='fill-white stroke-white hover:stroke-[#5bdbfd] hover:fill-[#5bdbfd] transition linear duration-[250ms]'

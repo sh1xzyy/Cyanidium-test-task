@@ -13,7 +13,6 @@ const useSendMessage = () => {
 	const handleSubmit = async (values, actions) => {
 		try {
 			await dispatch(sendMessageThunk(values)).unwrap()
-
 			actions.resetForm()
 			setIsModalFormOpen(false)
 			toast.success('Successfully sended a message')

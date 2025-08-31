@@ -20,7 +20,15 @@ export const sendMessageThunk = createAsyncThunk(
 					parse_mode: 'HTML',
 				}
 			)
-			return response
+
+			await axios.post(
+				`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`,
+				{
+					chat_id: TG_CHAT_ID,
+					text: `✅ Данные приняты в очередь на обработку`,
+				}
+			)
+			return response.data
 		} catch (error) {
 			return rejectWithValue('Something went wrong with sending data')
 		}

@@ -17,6 +17,7 @@ const ActionButton = ({ level }) => {
 			)}
 			type='button'
 			onClick={() => setIsModalFormOpen(true)}
+			aria-label='кнопка покупки тарифа'
 		>
 			Купить
 		</button>

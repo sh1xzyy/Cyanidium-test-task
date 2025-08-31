@@ -5,8 +5,8 @@ const GlowSphere = ({ styles }) => {
 		<div
 			className={clsx(
 				`
-        absolute 
-        w-[184px] 
+        absolute
+				w-[184px] 
         h-[173px] 
         rounded-full 
         opacity-60 

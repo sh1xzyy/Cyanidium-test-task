@@ -1,7 +1,7 @@
 'use client'
 
 import TextContent from './parts/TextContent'
-import BuyWithDiscountButton from '../common/BuyWithDiscountButton/BuyWithDiscountButton'
+import BuyWithDiscountLarge from '../common/BuyWithDiscountLarge/BuyWithDiscountLarge'
 import GlowSphere from '../common/GlowSphere/GlowSphere'
 import useWindowWidth from '@/hooks/windowWidth/useWindowWidth'
 import RightBlur from './parts/RightBlur'
@@ -15,21 +15,13 @@ const PromoBanner = () => {
 				<Image />
 			) : (
 				<>
-					<GlowSphere
-						styles='
-        blur-[100px] 
-        top-0 left-0 bg-[#a75df3]'
-					/>
-					<GlowSphere
-						styles='
-        blur-[100px] 
-        right-0 bottom-[0px] bg-[#13b8ff]'
-					/>
+					<GlowSphere styles='w-[184px] h-[173px] blur-[100px] top-0 left-0 bg-[#a75df3]' />
+					<GlowSphere styles='w-[184px] h-[173px] blur-[100px] right-0 bottom-0 bg-[#13b8ff]' />
 				</>
 			)}
 
 			<TextContent />
-			<BuyWithDiscountButton
+			<BuyWithDiscountLarge
 				buttonStyles='h-[68px] rounded-[40px] gradient-bg-121 shadow-[inset_4px_6px_10px_4px_rgba(167,93,243,0.2)]'
 				discountStyles='w-[63px] h-[68px]'
 				discount='-50%'

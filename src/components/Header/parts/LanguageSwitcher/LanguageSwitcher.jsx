@@ -20,6 +20,7 @@ const LanguageSwitcher = () => {
 				className='flex gap-[9px] items-center font-bold text-[14px] leading-[1.43] md:text-[16px] hover:text-[#5bdbfd] transition-colors duration-[250ms]'
 				type='button'
 				onClick={toggleDropdown}
+				aria-label='кнопка переключения языка страницы'
 			>
 				{lang}
 				<svg width={16} height={16}>

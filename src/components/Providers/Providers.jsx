@@ -12,7 +12,7 @@ export default function Providers({ children }) {
 			<AppProvider>
 				<Toaster position='top-left' />
 				<Header />
-				<main>{children}</main>
+				<main className='xl:pt-[113px]'>{children}</main>
 			</AppProvider>
 		</Provider>
 	)
