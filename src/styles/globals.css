@@ -62,17 +62,17 @@
 	}
 
 	.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		white-space: nowrap;
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
 }
 
 .gradient-text-151 {
@@ -131,7 +131,7 @@
 	);
 }
 
-.gradient-border-84 {
+.gradient-border-y-84 {
 	border-top: 2px solid;
 	border-bottom: 2px solid;
 	border-image: linear-gradient(
@@ -142,6 +142,32 @@
 			#e56f8c 100%
 		)
 		1;
+}
+
+.gradient-border-84 {
+	position: relative;
+	border-radius: 10px;
+	background: #fff;
+	z-index: 0;
+}
+
+.gradient-border-84::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	padding: 2px;
+	background: linear-gradient(
+		84deg,
+		#5bdbfd 0%,
+		#7375ff 40.3%,
+		#df93ff 79.87%,
+		#e56f8c 100%
+	);
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+	z-index: -1;
 }
 
 .gradient-right-blur {

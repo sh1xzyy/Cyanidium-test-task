@@ -10,7 +10,7 @@ import Image from './parts/Image'
 const PromoBanner = () => {
 	const { windowWidth } = useWindowWidth()
 	return (
-		<div className='relative flex flex-col items-center gap-[62px] gradient-border-84 py-[113px] md:pt-[60px] md:pb-[108px] md:gap-[44px] overflow-hidden'>
+		<div className='relative flex flex-col items-center gap-[62px] gradient-border-y-84 py-[113px] md:pt-[60px] md:pb-[108px] md:gap-[44px] overflow-hidden'>
 			{windowWidth >= 1280 ? (
 				<Image />
 			) : (
@@ -30,7 +30,7 @@ const PromoBanner = () => {
 
 			<TextContent />
 			<BuyWithDiscountButton
-				buttonStyles='h-[68px] rounded-[40px] gradient-bg-121  shadow-buttonCustom'
+				buttonStyles='h-[68px] rounded-[40px] gradient-bg-121 shadow-[inset_4px_6px_10px_4px_rgba(167,93,243,0.2)]'
 				discountStyles='w-[63px] h-[68px]'
 				discount='-50%'
 			/>
