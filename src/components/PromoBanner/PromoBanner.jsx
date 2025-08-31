@@ -22,7 +22,7 @@ const PromoBanner = () => {
 
 			<TextContent />
 			<BuyWithDiscountLarge
-				buttonStyles='h-[68px] rounded-[40px] gradient-bg-121 shadow-[inset_4px_6px_10px_4px_rgba(167,93,243,0.2)]'
+				buttonStyles='h-[68px] rounded-[40px] gradient-bg-121 shadow-[inset_4px_6px_10px_4px_rgba(167,93,243,0.2)] '
 				discountStyles='w-[63px] h-[68px]'
 				discount='-50%'
 			/>

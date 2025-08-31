@@ -6,7 +6,7 @@ const TextContent = () => {
 	const { t } = useClientTranslation()
 
 	return (
-		<div className='text-center max-w-[320px] md:max-w-[450px]'>
+		<div className='text-center w-full max-w-[320px] md:max-w-[490px]'>
 			<h2 className='font-bold text-[20px] uppercase leading-[1.17] mb-[20px] md:text-[36px]'>
 				{t('learnToCreate1')}
 				<br /> {t('learnToCreate2')}

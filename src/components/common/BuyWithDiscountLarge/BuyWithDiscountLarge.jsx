@@ -9,10 +9,10 @@ const BuyWithDiscountLarge = ({ buttonStyles, discountStyles, discount }) => {
 	const { t } = useClientTranslation()
 
 	return (
-		<div className='relative'>
+		<div className='relative group'>
 			<button
 				className={clsx(
-					'min-w-[313px] px-[93px] font-semibold text-[14px] shadow-[inset_4px_6px_10px_4px_rgba(167,93,243,0.2)] leading-[1.54] xl:text-[22px] xl:leading-[1.67] xl:h-[74px] xl:min-w-[534px] xl:rounded-[60px]',
+					'min-w-[313px] px-[93px] font-semibold text-[14px] shadow-[inset_4px_6px_10px_4px_rgba(167,93,243,0.2)] transition linear duration-[250ms] leading-[1.54] xl:text-[22px] xl:leading-[1.67] xl:h-[74px] xl:min-w-[534px] xl:rounded-[60px]',
 					buttonStyles
 				)}
 				type='button'
@@ -23,7 +23,7 @@ const BuyWithDiscountLarge = ({ buttonStyles, discountStyles, discount }) => {
 			</button>
 			<div
 				className={clsx(
-					'flex justify-center items-center pointer-events-none absolute top-0 right-0 rounded-full bg-[#ff4a77] xl:w-[74px] xl:h-[74px]',
+					'flex justify-center items-center pointer-events-none absolute top-0 right-0 rounded-full bg-[#ff4a77] transition linear duration-[250ms] group-hover:bg-[#7c1d35] xl:w-[74px] xl:h-[74px]',
 					discountStyles
 				)}
 			>

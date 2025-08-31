@@ -16,7 +16,7 @@ const Hero = () => {
 				<div className='inline-flex flex-col items-center w-fit'>
 					<div className='xl:self-start'>
 						<BuyWithDiscountLarge
-							buttonStyles='h-[60px] rounded-[30px] bg-[#ffffff] text-[#000000]'
+							buttonStyles='h-[60px] rounded-[30px] bg-[#ffffff] text-[#000000] hover:bg-[#0c0117] hover:text-[#ffffff] hover:border-[#ffffff] focus:bg-[#0c0117] focus:text-[#ffffff] focus:border-[#ffffff]'
 							discountStyles='w-[60px] h-[60px]'
 							discount='-50%'
 						/>
