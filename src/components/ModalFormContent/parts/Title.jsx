@@ -1,9 +1,15 @@
-import React from 'react'
+'use client'
+
+import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
 
 const Title = () => {
-  return (
-    <h3 className='font-bold text-[24px] uppercase mb-[36px]'>укажите свои данные</h3>
-  )
+	const { t } = useClientTranslation()
+
+	return (
+		<h3 className='font-bold text-[24px] uppercase mb-[36px]'>
+			{t('enterYourData')}
+		</h3>
+	)
 }
 
 export default Title

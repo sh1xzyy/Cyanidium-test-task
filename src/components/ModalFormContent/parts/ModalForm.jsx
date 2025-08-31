@@ -2,6 +2,7 @@
 
 import Loader from '@/components/common/Loader/Loader'
 import useSendMessage from '@/features/sendMessage/useSendMessage'
+import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
 import { selectIsLoading } from '@/redux/sendMessage/selectors'
 import { ErrorMessage, Field, Form, Formik } from 'formik'
 import { useSelector } from 'react-redux'
@@ -9,6 +10,7 @@ import { useSelector } from 'react-redux'
 const ModalForm = () => {
 	const { initialValues, handleSubmit, validationSchema } = useSendMessage()
 	const isLoading = useSelector(selectIsLoading)
+	const { t } = useClientTranslation()
 
 	return (
 		<>
@@ -22,25 +24,25 @@ const ModalForm = () => {
 					<div className='flex flex-col gap-[18px]'>
 						<div>
 							<label className='visually-hidden' htmlFor='name'>
-								Имя
+								{t('name')}
 							</label>
 							<Field
 								className='w-full h-[46px] pl-[14px] rounded-[14px] bg-[#ffffff] font-normal text-[14px] text-[#0c0117] placeholder:text-[#0c0117] outline-transparent transition linear duration-[250ms] hover:border-red-400 focus:outline-[rgba(160,65,255,0.4)]'
 								name='name'
 								id='name'
-								placeholder='Имя'
+								placeholder={t('name')}
 							/>
 						</div>
 
 						<div>
 							<label className='visually-hidden' htmlFor='nickname'>
-								Ник Telegram
+								{t('nickname')}
 							</label>
 							<Field
 								className='w-full h-[46px] pl-[14px] rounded-[14px] bg-[#ffffff] font-normal text-[14px] text-[#0c0117] placeholder:text-[#0c0117] outline-transparent transition linear duration-[250ms] hover:border-red-400 focus:outline-[rgba(167,93,243,0.2)]'
 								name='nickname'
 								id='nickname'
-								placeholder='Ник Telegram'
+								placeholder={t('nickname')}
 							/>
 						</div>
 
@@ -64,9 +66,9 @@ const ModalForm = () => {
 					<button
 						className='h-[50px] rounded-[10px] min-w-[317px] bg-[#ffffff] font-bold text-[14px] leading-[1.43] text-[#0c0117] mt-[40px] shadow-[0_1px_2px_0_rgba(0,0,0,0.05)] gradient-border-84 xl:min-w-[310px]'
 						type='submit'
-						aria-label='кнопка отправки сообщения'
+						aria-label={t('sendMessageButton')}
 					>
-						Отправить
+						{t('sendButton')}
 					</button>
 				</Form>
 			</Formik>

@@ -27,7 +27,7 @@ const Header = () => {
 					<BuyWithDiscountSmall styles='mt-[25px]' />
 				</BurgerMenu>
 			)}
-			<header className='xl:fixed xl:top-0 xl:left-0 xl:w-full xl:z-[50] bg-[#0c0117]'>
+			<header className='xl:fixed xl:top-0 xl:left-0 xl:w-full xl:z-[1500] bg-[#0c0117]'>
 				<Container>
 					<div className='flex justify-between items-center gap-[27.8px] pt-[51px] pb-[12px] md:pt-[40px] md:pb-[33px]'>
 						<Link href='/' className={logo}>

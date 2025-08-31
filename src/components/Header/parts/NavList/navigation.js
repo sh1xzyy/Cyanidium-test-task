@@ -1,7 +1,7 @@
-export const navigation = [
-	{ value: 'Структура', href: 'structure' },
-	{ value: 'Обо мне', href: 'about-me' },
-	{ value: 'Плюсы', href: 'plus' },
-	{ value: 'Отзывы', href: 'reviews' },
-	{ value: 'FAQ', href: 'FAQ' },
+export const navigation = t => [
+	{ value: t('structure'), href: 'structure' },
+	{ value: t('aboutMe'), href: 'about-me' },
+	{ value: t('pluses'), href: 'plus' },
+	{ value: t('reviews'), href: 'reviews' },
+	{ value: t('faq'), href: 'FAQ' },
 ]

@@ -1,10 +1,13 @@
 'use client'
 
 import { useModalFormContext } from '@/context/useModalFormContext/useModalFormContext'
+import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
 import clsx from 'clsx'
 
 const ActionButton = ({ level }) => {
 	const { setIsModalFormOpen } = useModalFormContext()
+	const { t } = useClientTranslation()
+
 	return (
 		<button
 			className={clsx(
@@ -17,9 +20,9 @@ const ActionButton = ({ level }) => {
 			)}
 			type='button'
 			onClick={() => setIsModalFormOpen(true)}
-			aria-label='кнопка покупки тарифа'
+			aria-label={t('buyPlanButton')}
 		>
-			Купить
+			{t('buy')}
 		</button>
 	)
 }

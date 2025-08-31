@@ -2,6 +2,7 @@ import { Manrope, Raleway } from 'next/font/google'
 import '../styles/globals.css'
 import localFont from 'next/font/local'
 import Providers from '@/components/Providers/Providers'
+import I18nProvider from '@/components/I18nProvider/I18nProvider'
 
 export const manrope = Manrope({
 	subsets: ['latin', 'cyrillic'],
@@ -39,7 +40,9 @@ export default function RootLayout({ children }) {
 			<body
 				className={`${manrope.variable} ${raleway.variable} ${sansation.variable} antialiased`}
 			>
-				<Providers>{children}</Providers>
+				<Providers>
+					<I18nProvider>{children}</I18nProvider>
+				</Providers>
 			</body>
 		</html>
 	)

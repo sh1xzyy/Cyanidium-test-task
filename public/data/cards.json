@@ -6,7 +6,7 @@
 			"original": 139,
 			"discounted": 99
 		},
-		"features": ["базовый курс", "38 уроков"]
+		"features": ["basic_course", "38_lessons"]
 	},
 	{
 		"level": "advanced",
@@ -16,10 +16,10 @@
 			"discounted": 149
 		},
 		"features": [
-			"база",
-			"дополнительные уроки",
-			"48 уроков",
-			"чат-комьюнити для создателей контента"
+			"foundation",
+			"additional_lessons",
+			"48_lessons",
+			"chat_community_for_content_creators"
 		]
 	},
 	{
@@ -30,10 +30,10 @@
 			"discounted": 299
 		},
 		"features": [
-			"дополнительные уроки",
-			"48 уроков",
-			"чат-комьюнити для создателей контента",
-			"Разбор вашей страницы в формате видеозвонка"
+			"additional_lessons",
+			"48_lessons",
+			"chat_community_for_content_creators",
+			"review_of_your_page_via_video_call"
 		]
 	}
 ]
