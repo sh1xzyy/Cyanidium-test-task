@@ -1,11 +1,13 @@
 'use client'
 
 import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
+import { useModalFormContext } from '@/context/useModalFormContext/useModalFormContext'
 import clsx from 'clsx'
 import Link from 'next/link'
 
 const BuyWithDiscountSmall = ({ styles }) => {
 	const { t } = useClientTranslation()
+	const { setIsModalFormOpen } = useModalFormContext()
 	return (
 		<Link
 			className={clsx(
@@ -15,6 +17,7 @@ const BuyWithDiscountSmall = ({ styles }) => {
 			scroll={true}
 			aria-label={t('buyWithDiscount')}
 			href='#tariffs'
+			onClick(() => setIsModalFormOpen(false))
 		>
 			{t('buyWithDiscount')}
 		</Link>
