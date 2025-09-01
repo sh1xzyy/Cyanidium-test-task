@@ -17,7 +17,7 @@ const BuyWithDiscountSmall = ({ styles }) => {
 			scroll={true}
 			aria-label={t('buyWithDiscount')}
 			href='#tariffs'
-			onClick(() => setIsModalFormOpen(false))
+			onClick={() => setIsModalFormOpen(false)}
 		>
 			{t('buyWithDiscount')}
 		</Link>
