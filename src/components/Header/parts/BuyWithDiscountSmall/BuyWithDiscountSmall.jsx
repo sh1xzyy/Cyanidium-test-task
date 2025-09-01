@@ -1,13 +1,13 @@
 'use client'
 
 import { useClientTranslation } from '@/hooks/useClientTranslation/useClientTranslation'
-import { useModalFormContext } from '@/context/useModalFormContext/useModalFormContext'
+import { useBurgerMenuOpenContext } from '@/context/useBurgerMenuOpenContext/useBurgerMenuOpenContext'
 import clsx from 'clsx'
 import Link from 'next/link'
 
 const BuyWithDiscountSmall = ({ styles }) => {
 	const { t } = useClientTranslation()
-	const { setIsModalFormOpen } = useModalFormContext()
+	const { isBurgerMenuOpen, setIsBurgerMenuOpen } = useBurgerMenuOpenContext()
 	return (
 		<Link
 			className={clsx(
@@ -17,7 +17,7 @@ const BuyWithDiscountSmall = ({ styles }) => {
 			scroll={true}
 			aria-label={t('buyWithDiscount')}
 			href='#tariffs'
-			onClick={() => setIsModalFormOpen(false)}
+			onClick={() => isBurgerMenuOpen && setIsBurgerMenuOpen(false)}
 		>
 			{t('buyWithDiscount')}
 		</Link>
